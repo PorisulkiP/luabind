@@ -3,6 +3,8 @@ Luabind
 
 [![Travis CI build status](https://travis-ci.com/Oberon00/luabind.svg?branch=master)](https://travis-ci.com/github/Oberon00/luabind)
 
+ [Russian version of README](README.rus.md) 
+
 Luabind is a library that helps you create bindings between C++ and Lua. It
 has the ability to expose functions and classes, written in C++, to Lua. It
 will also supply the functionality to define classes in lua and let them
