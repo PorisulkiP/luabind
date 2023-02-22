@@ -24,6 +24,8 @@
 #ifndef LUABIND_CLASS_HPP_INCLUDED
 #define LUABIND_CLASS_HPP_INCLUDED
 
+#define BOOST_BIND_NO_PLACEHOLDERS
+
 /*
     ISSUES:
     ------------------------------------------------------
@@ -304,11 +306,7 @@ namespace luabind
         template <class T>
         struct default_pointer<null_type, T>
         {
-#ifdef LUABIND_USE_CXX11
             typedef std::unique_ptr<T> type;
-#else
-            typedef std::auto_ptr<T> type;
-#endif
         };
 
         template <class Class, class Pointer, class Signature, class Policies>
